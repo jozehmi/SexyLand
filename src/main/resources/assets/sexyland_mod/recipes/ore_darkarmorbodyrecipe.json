@@ -1,0 +1,39 @@
+{
+  "group": "sexyland_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "sexyland_mod:ore_darkgem"
+    },
+    "2": {
+      "item": "sexyland_mod:ore_darkgem"
+    },
+    "3": {
+      "item": "sexyland_mod:ore_darkgem"
+    },
+    "4": {
+      "item": "sexyland_mod:ore_darkgem"
+    },
+    "5": {
+      "item": "sexyland_mod:ore_darkgem"
+    },
+    "6": {
+      "item": "sexyland_mod:ore_darkgem"
+    },
+    "7": {
+      "item": "sexyland_mod:ore_darkgem"
+    },
+    "8": {
+      "item": "sexyland_mod:ore_darkgem"
+    }
+  },
+  "result": {
+    "item": "sexyland_mod:ore_darkarmorbody",
+    "count": 1
+  }
+}

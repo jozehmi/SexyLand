@@ -1,0 +1,13 @@
+{
+  "group": "sexyland_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sexyland_mod:ore_darkoreblock"
+    }
+  ],
+  "result": {
+    "item": "sexyland_mod:ore_darkgem",
+    "count": 9
+  }
+}

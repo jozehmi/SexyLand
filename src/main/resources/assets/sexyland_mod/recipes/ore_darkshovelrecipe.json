@@ -1,0 +1,24 @@
+{
+  "group": "sexyland_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "sexyland_mod:ore_darkgem"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "sexyland_mod:ore_darkshovel",
+    "count": 1
+  }
+}

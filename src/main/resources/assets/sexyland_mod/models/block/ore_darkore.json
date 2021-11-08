@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "sexyland_mod:blocks/nfinity_re",
+    "particle": "sexyland_mod:blocks/nfinity_re"
+  }
+}

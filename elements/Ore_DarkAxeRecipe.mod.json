@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Ore_DarkGem"
+      },
+      {
+        "value": "CUSTOM:Ore_DarkGem"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ore_DarkGem"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Ore_DarkAxe"
+    },
+    "name": "ore_darkaxerecipe",
+    "namespace": "mod"
+  }
+}
