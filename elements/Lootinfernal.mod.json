@@ -1,0 +1,10 @@
+{
+  "_fv": 6,
+  "_type": "loottable",
+  "definition": {
+    "type": "Generic",
+    "pools": [],
+    "name": "lootinfernal",
+    "namespace": "mod"
+  }
+}

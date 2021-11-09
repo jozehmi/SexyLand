@@ -3,24 +3,22 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "s_k_i_n",
+    "texture": "gem",
     "customModelName": "Normal",
-    "name": "Ore_Dark",
+    "name": "Gemmoon",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "MISC"
     },
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
-    "destroyAnyBlock": true,
+    "destroyAnyBlock": false,
     "stayInGridWhenCrafting": false,
-    "enableMeleeDamage": true,
-    "damageVsEntity": 0.1,
-    "specialInfo": [
-      "sexy darck-gema"
-    ],
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
     "hasGlow": true
   }
 }

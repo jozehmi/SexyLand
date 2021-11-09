@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "sexyland_mod:blocks/nfinity_re",
+    "down": "sexyland_mod:blocks/nfinity_re",
+    "up": "sexyland_mod:blocks/nfinity_re",
+    "north": "sexyland_mod:blocks/nfinity_re",
+    "east": "sexyland_mod:blocks/nfinity_re",
+    "south": "sexyland_mod:blocks/nfinity_re",
+    "west": "sexyland_mod:blocks/nfinity_re",
     "particle": "sexyland_mod:blocks/nfinity_re"
   }
 }
