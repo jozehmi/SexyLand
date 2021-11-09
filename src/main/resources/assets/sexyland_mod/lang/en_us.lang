@@ -1,8 +1,8 @@
 item.ore_darkarmorlegs.name=Ore_Dark Leggings
 item.ore_darkshovel.name=Ore_Dark Shovel
-tile.ore_darkoreblock.name=Block of Ore_Dark
-item.ore_darkaxe.name=Ore_Dark Axe
 item.ore_darkhoe.name=Ore_Dark Hoe
+item.ore_darkaxe.name=Ore_Dark Axe
+tile.ore_darkoreblock.name=Block of Ore_Dark
 item.ore_darkarmorbody.name=Ore_Dark Chestplate
 item.ore_darksword.name=Ore_Dark Sword
 item.ore_darkarmorboots.name=Ore_Dark Boots
