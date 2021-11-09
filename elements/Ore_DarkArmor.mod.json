@@ -42,6 +42,10 @@
     "equipSound": {
       "value": ""
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ore_DarkOre"
+      }
+    ]
   }
 }

@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "sexyland_mod:blocks/lack_ool",
+    "down": "sexyland_mod:blocks/lack_ool",
+    "up": "sexyland_mod:blocks/lack_ool",
+    "north": "sexyland_mod:blocks/lack_ool",
+    "east": "sexyland_mod:blocks/lack_ool",
+    "south": "sexyland_mod:blocks/lack_ool",
+    "west": "sexyland_mod:blocks/lack_ool",
     "particle": "sexyland_mod:blocks/lack_ool"
   }
 }

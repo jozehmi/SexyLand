@@ -1,5 +1,7 @@
 {
-  "id_map": {},
+  "id_map": {
+    "ENTITY": 3
+  },
   "mod_elements": [
     {
       "name": "Ore_DarkOre",
@@ -174,6 +176,51 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Arrow",
+      "type": "tool",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Gemmoon",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Lootinfernal",
+      "type": "loottable",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Darckarrow",
+      "type": "gun",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1
+      }
+    },
+    {
+      "name": "SenordelaNoche",
+      "type": "mob",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 2,
+        "1": 3
+      }
     }
   ],
   "variable_elements": [],
@@ -182,13 +229,17 @@
     "en_us": {
       "item.ore_darkarmorlegs.name": "Ore_Dark Leggings",
       "item.ore_darkshovel.name": "Ore_Dark Shovel",
-      "tile.ore_darkoreblock.name": "Block of Ore_Dark",
-      "item.ore_darkaxe.name": "Ore_Dark Axe",
       "item.ore_darkhoe.name": "Ore_Dark Hoe",
+      "item.ore_darkaxe.name": "Ore_Dark Axe",
+      "tile.ore_darkoreblock.name": "Block of Ore_Dark",
+      "entity.senordelanoche.name": "Señor de la Noxe",
       "item.ore_darkarmorbody.name": "Ore_Dark Chestplate",
+      "item.darckarrow.name": "Darckarrow",
       "item.ore_darksword.name": "Ore_Dark Sword",
       "item.ore_darkarmorboots.name": "Ore_Dark Boots",
+      "item.arrow.name": "Arrow",
       "item.ore_darkarmorhelmet.name": "Ore_Dark Helmet",
+      "item.gemmoon.name": "Gemmoon",
       "tile.ore_darkore.name": "Ore_Dark Ore",
       "item.ore_darkpickaxe.name": "Ore_Dark Pickaxe",
       "item.ore_darkgem.name": "Ore_Dark"
