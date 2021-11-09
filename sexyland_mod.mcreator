@@ -210,17 +210,6 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
-    },
-    {
-      "name": "SenordelaNoche",
-      "type": "mob",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 2,
-        "1": 3
-      }
     }
   ],
   "variable_elements": [],
@@ -232,7 +221,6 @@
       "item.ore_darkhoe.name": "Ore_Dark Hoe",
       "item.ore_darkaxe.name": "Ore_Dark Axe",
       "tile.ore_darkoreblock.name": "Block of Ore_Dark",
-      "entity.senordelanoche.name": "Señor de la Noxe",
       "item.ore_darkarmorbody.name": "Ore_Dark Chestplate",
       "item.darckarrow.name": "Darckarrow",
       "item.ore_darksword.name": "Ore_Dark Sword",

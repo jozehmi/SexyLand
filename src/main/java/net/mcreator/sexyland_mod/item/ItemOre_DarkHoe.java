@@ -29,10 +29,10 @@ public class ItemOre_DarkHoe extends ElementsSexyland.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("ORE_DARKHOE", 2, 250, 6f, 0f, 14)) {
+		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("ORE_DARKHOE", 4, 500, 12f, 0f, 14)) {
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("hoe", 2);
+				ret.put("hoe", 4);
 				return ret.keySet();
 			}
 		}.setUnlocalizedName("ore_darkhoe").setRegistryName("ore_darkhoe").setCreativeTab(CreativeTabs.TOOLS));

@@ -56,13 +56,15 @@ public class BlockOre_DarkOre extends ElementsSexyland.ModElement {
 		boolean dimensionCriteria = false;
 		if (dimID == 0)
 			dimensionCriteria = true;
+		if (dimID == -1)
+			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return;
-		for (int i = 0; i < 11; i++) {
+		for (int i = 0; i < 1; i++) {
 			int x = chunkX + random.nextInt(16);
-			int y = random.nextInt(62) + 1;
+			int y = random.nextInt(15) + 0;
 			int z = chunkZ + random.nextInt(16);
-			(new WorldGenMinable(block.getDefaultState(), 7, new com.google.common.base.Predicate<IBlockState>() {
+			(new WorldGenMinable(block.getDefaultState(), 6, new com.google.common.base.Predicate<IBlockState>() {
 				public boolean apply(IBlockState blockAt) {
 					boolean blockCriteria = false;
 					IBlockState require;
@@ -78,9 +80,9 @@ public class BlockOre_DarkOre extends ElementsSexyland.ModElement {
 			super(Material.ROCK);
 			setUnlocalizedName("ore_darkore");
 			setSoundType(SoundType.STONE);
-			setHarvestLevel("pickaxe", 2);
-			setHardness(3F);
-			setResistance(5F);
+			setHarvestLevel("pickaxe", 3);
+			setHardness(25F);
+			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(255);
 			setCreativeTab(CreativeTabs.BUILDING_BLOCKS);

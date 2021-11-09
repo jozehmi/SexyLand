@@ -27,7 +27,7 @@ public class ItemOre_DarkAxe extends ElementsSexyland.ModElement {
 	@GameRegistry.ObjectHolder("sexyland_mod:ore_darkaxe")
 	public static final Item block = null;
 	public ItemOre_DarkAxe(ElementsSexyland instance) {
-		super(instance, 8);
+		super(instance, 7);
 	}
 
 	@Override
@@ -46,8 +46,8 @@ public class ItemOre_DarkAxe extends ElementsSexyland.ModElement {
 				.newHashSet(new Block[]{Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN,
 						Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE});
 		protected ItemToolCustom() {
-			super(EnumHelper.addToolMaterial("ORE_DARKAXE", 2, 250, 6f, 2f, 14), effective_items_set);
-			this.attackDamage = 2f;
+			super(EnumHelper.addToolMaterial("ORE_DARKAXE", 4, 500, 12f, 6f, 14), effective_items_set);
+			this.attackDamage = 6f;
 			this.attackSpeed = -3f;
 		}
 

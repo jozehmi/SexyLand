@@ -18,6 +18,6 @@ public class RecipeOre_DarkOreSmelting extends ElementsSexyland.ModElement {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		GameRegistry.addSmelting(new ItemStack(BlockOre_DarkOre.block, (int) (1)), new ItemStack(ItemOre_DarkGem.block, (int) (1)), 0.7F);
+		GameRegistry.addSmelting(new ItemStack(BlockOre_DarkOre.block, (int) (1)), new ItemStack(ItemOre_DarkGem.block, (int) (1)), 25F);
 	}
 }

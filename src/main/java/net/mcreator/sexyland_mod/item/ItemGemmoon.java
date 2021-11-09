@@ -1,12 +1,24 @@
 
 package net.mcreator.sexyland_mod.item;
 
+import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.block.state.IBlockState;
+
+import net.mcreator.sexyland_mod.ElementsSexyland;
+
 @ElementsSexyland.ModElement.Tag
 public class ItemGemmoon extends ElementsSexyland.ModElement {
-
 	@GameRegistry.ObjectHolder("sexyland_mod:gemmoon")
 	public static final Item block = null;
-
 	public ItemGemmoon(ElementsSexyland instance) {
 		super(instance, 23);
 	}
@@ -21,9 +33,7 @@ public class ItemGemmoon extends ElementsSexyland.ModElement {
 	public void registerModels(ModelRegistryEvent event) {
 		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("sexyland_mod:gemmoon", "inventory"));
 	}
-
 	public static class ItemCustom extends Item {
-
 		public ItemCustom() {
 			setMaxDamage(0);
 			maxStackSize = 64;
@@ -52,7 +62,5 @@ public class ItemGemmoon extends ElementsSexyland.ModElement {
 		public boolean hasEffect(ItemStack itemstack) {
 			return true;
 		}
-
 	}
-
 }

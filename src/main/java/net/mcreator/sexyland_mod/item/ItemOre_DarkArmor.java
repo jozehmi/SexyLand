@@ -33,8 +33,8 @@ public class ItemOre_DarkArmor extends ElementsSexyland.ModElement {
 
 	@Override
 	public void initElements() {
-		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("ORE_DARKARMOR", "sexyland_mod:ore_dark", 15, new int[]{2, 6, 5, 2}, 9,
-				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("")), 0f);
+		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("ORE_DARKARMOR", "sexyland_mod:ore_dark", 30, new int[]{2, 6, 5, 2}, 30,
+				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("")), 3f);
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.HEAD).setUnlocalizedName("ore_darkarmorhelmet")
 				.setRegistryName("ore_darkarmorhelmet").setCreativeTab(CreativeTabs.COMBAT));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.CHEST).setUnlocalizedName("ore_darkarmorbody")

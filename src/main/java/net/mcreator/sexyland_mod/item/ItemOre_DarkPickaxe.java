@@ -20,7 +20,7 @@ import java.util.Set;
 import java.util.HashMap;
 
 @ElementsSexyland.ModElement.Tag
-public class ItemOre_DarkPickaxe extends ElementsSexyland.ModElement {
+public class ItemOre_DarkPickaxe extends ElementsSexyland.ModElement {s
 	@GameRegistry.ObjectHolder("sexyland_mod:ore_darkpickaxe")
 	public static final Item block = null;
 	public ItemOre_DarkPickaxe(ElementsSexyland instance) {
@@ -29,13 +29,13 @@ public class ItemOre_DarkPickaxe extends ElementsSexyland.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("ORE_DARKPICKAXE", 2, 250, 6f, -2f, 14)) {
+		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("ORE_DARKPICKAXE", 4, 500, 12f, 4f, 14)) {
 			{
-				this.attackSpeed = -3f;
+				this.attackSpeed = -4f;
 			}
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("pickaxe", 2);
+				ret.put("pickaxe", 4);
 				return ret.keySet();
 			}
 		}.setUnlocalizedName("ore_darkpickaxe").setRegistryName("ore_darkpickaxe").setCreativeTab(CreativeTabs.TOOLS));

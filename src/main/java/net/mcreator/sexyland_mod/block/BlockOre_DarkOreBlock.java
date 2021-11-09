@@ -42,9 +42,9 @@ public class BlockOre_DarkOreBlock extends ElementsSexyland.ModElement {
 			super(Material.IRON);
 			setUnlocalizedName("ore_darkoreblock");
 			setSoundType(SoundType.METAL);
-			setHarvestLevel("pickaxe", 2);
-			setHardness(5F);
-			setResistance(10F);
+			setHarvestLevel("pickaxe", 3);
+			setHardness(30F);
+			setResistance(12F);
 			setLightLevel(0F);
 			setLightOpacity(255);
 			setCreativeTab(CreativeTabs.BUILDING_BLOCKS);

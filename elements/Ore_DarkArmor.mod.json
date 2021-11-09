@@ -32,13 +32,13 @@
     "bootsModelPartL": "Boots L",
     "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
-    "maxDamage": 15,
+    "maxDamage": 30,
     "damageValueHelmet": 2,
     "damageValueBody": 5,
     "damageValueLeggings": 6,
     "damageValueBoots": 2,
-    "enchantability": 9,
-    "toughness": 0.0,
+    "enchantability": 30,
+    "toughness": 3.0,
     "equipSound": {
       "value": ""
     },

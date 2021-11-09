@@ -29,13 +29,13 @@ public class ItemOre_DarkShovel extends ElementsSexyland.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSpade(EnumHelper.addToolMaterial("ORE_DARKSHOVEL", 2, 250, 6f, -2f, 14)) {
+		elements.items.add(() -> new ItemSpade(EnumHelper.addToolMaterial("ORE_DARKSHOVEL", 4, 500, 12f, 3f, 14)) {
 			{
 				this.attackSpeed = -3f;
 			}
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("spade", 2);
+				ret.put("spade", 4);
 				return ret.keySet();
 			}
 		}.setUnlocalizedName("ore_darkshovel").setRegistryName("ore_darkshovel").setCreativeTab(CreativeTabs.TOOLS));

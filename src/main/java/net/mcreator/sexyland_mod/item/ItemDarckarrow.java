@@ -1,14 +1,44 @@
 
 package net.mcreator.sexyland_mod.item;
 
+import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+
+import net.minecraft.world.World;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.ActionResult;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.EnumAction;
+import net.minecraft.init.Enchantments;
+import net.minecraft.entity.projectile.EntityTippedArrow;
+import net.minecraft.entity.projectile.EntityArrow;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.Entity;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.client.renderer.entity.RenderSnowball;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.sexyland_mod.ElementsSexyland;
+
 @ElementsSexyland.ModElement.Tag
 public class ItemDarckarrow extends ElementsSexyland.ModElement {
-
 	@GameRegistry.ObjectHolder("sexyland_mod:darckarrow")
 	public static final Item block = null;
-
 	public static final int ENTITYID = 1;
-
 	public ItemDarckarrow(ElementsSexyland instance) {
 		super(instance, 25);
 	}
@@ -34,18 +64,15 @@ public class ItemDarckarrow extends ElementsSexyland.ModElement {
 			return new RenderSnowball(renderManager, new ItemStack(ItemArrow.block, (int) (1)).getItem(), Minecraft.getMinecraft().getRenderItem());
 		});
 	}
-
 	public static class RangedItem extends Item {
-
 		public RangedItem() {
 			super();
 			setMaxDamage(100);
 			setFull3D();
 			setUnlocalizedName("darckarrow");
 			setRegistryName("darckarrow");
-			maxStackSize = 1;
+			maxStackSize = 2;
 			setCreativeTab(CreativeTabs.COMBAT);
-
 		}
 
 		@Override
@@ -61,7 +88,6 @@ public class ItemDarckarrow extends ElementsSexyland.ModElement {
 						break;
 					}
 				}
-
 				if (entity.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, itemstack) > 0
 						|| slotID != -1) {
 					float power = 1f;
@@ -70,10 +96,8 @@ public class ItemDarckarrow extends ElementsSexyland.ModElement {
 					entityarrow.setSilent(true);
 					entityarrow.setIsCritical(false);
 					entityarrow.setDamage(5);
-					entityarrow.setKnockbackStrength(5);
-
+					entityarrow.setKnockbackStrength(7);
 					itemstack.damageItem(1, entity);
-
 					int x = (int) entity.posX;
 					int y = (int) entity.posY;
 					int z = (int) entity.posZ;
@@ -81,7 +105,6 @@ public class ItemDarckarrow extends ElementsSexyland.ModElement {
 							(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
 									.getObject(new ResourceLocation(("entity.arrow.shoot"))),
 							SoundCategory.NEUTRAL, 1, 1f / (itemRand.nextFloat() * 0.5f + 1f) + (power / 2));
-
 					if (entity.capabilities.isCreativeMode) {
 						entityarrow.pickupStatus = EntityArrow.PickupStatus.CREATIVE_ONLY;
 					} else {
@@ -95,10 +118,8 @@ public class ItemDarckarrow extends ElementsSexyland.ModElement {
 							entity.inventory.clearMatchingItems(new ItemStack(ItemArrow.block, (int) (1)).getItem(), -1, 1, null);
 						}
 					}
-
 					if (!world.isRemote)
 						world.spawnEntity(entityarrow);
-
 				}
 			}
 		}
@@ -118,17 +139,9 @@ public class ItemDarckarrow extends ElementsSexyland.ModElement {
 		public int getMaxItemUseDuration(ItemStack itemstack) {
 			return 72000;
 		}
-
-		@Override
-		@SideOnly(Side.CLIENT)
-		public boolean hasEffect(ItemStack itemstack) {
-			return true;
-		}
-
 	}
 
 	public static class EntityArrowCustom extends EntityTippedArrow {
-
 		public EntityArrowCustom(World a) {
 			super(a);
 		}
@@ -159,7 +172,5 @@ public class ItemDarckarrow extends ElementsSexyland.ModElement {
 				this.world.removeEntity(this);
 			}
 		}
-
 	}
-
 }
